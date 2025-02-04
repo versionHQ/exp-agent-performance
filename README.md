@@ -12,7 +12,7 @@ Experiment on AI agent performance using `versionhq` and `pydantic`.
 - [PyPI](https://pypi.org/project/versionhq/)
 - [Github](https://github.com/versionHQ/multi-agent-system)
 - [Documentation](https://chief-oxygen-8a2.notion.site/Documentation-17e923685cf98001a5fad5c4b2acd79b?pvs=4) *under review
-- [Process](https://medium.com/@kuriko-iwai/48d42fc57b71)
+- [Process (Medium story)](https://medium.com/@kuriko-iwai/48d42fc57b71)
 
 <hr />
 
