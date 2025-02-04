@@ -1,7 +1,7 @@
 # Overview
 
 ![MIT license](https://img.shields.io/badge/License-MIT-green)
-![python ver](https://img.shields.io/badge/Python-3.11/3.12-purple)
+![python ver](https://img.shields.io/badge/Python-3.11/3.12-orange)
 
 
 Experiment on AI agent performance using `versionhq` and `pydantic`.
@@ -11,8 +11,8 @@ Experiment on AI agent performance using `versionhq` and `pydantic`.
 
 - [PyPI](https://pypi.org/project/versionhq/)
 - [Github](https://github.com/versionHQ/multi-agent-system)
-- [Documentation](https://chief-oxygen-8a2.notion.site/Documentation-17e923685cf98001a5fad5c4b2acd79b?pvs=4) *Some under review
-
+- [Documentation](https://chief-oxygen-8a2.notion.site/Documentation-17e923685cf98001a5fad5c4b2acd79b?pvs=4) *under review
+- [Process](https://medium.com/@kuriko-iwai/48d42fc57b71)
 
 <hr />
 
@@ -71,12 +71,20 @@ Agents are model-agnostic, and can handle and share RAG tools, knowledge, memory
 
 <hr />
 
-### Customizing
+## Customizing
 
 - To add or refine an agent, use `src/agents.py`.
 
 - To add or refine a task, use `src/tasks.py`.
 
+
+<hr />
+
+## Results
+
+<img src="https://res.cloudinary.com/dfeirxlea/image/upload/v1738634968/pj_m_test/ulzp0wi0rptq61vkirkq.png">
+
+(Feb 3, 2025)
 
 <hr />
 
