@@ -1,0 +1,10 @@
+.venv/
+.env
+__pycache__/
+.DS_Store
+.DS_Store/
+dist/
+.ruff_cache/
+.vscode
+sample_dataset/
+note.txt
