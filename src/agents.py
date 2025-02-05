@@ -1,4 +1,4 @@
-from versionhq.agent.model import Agent
+from versionhq import Agent
 
 
 def create_agents(llm: str = None) -> tuple[Agent]:

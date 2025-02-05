@@ -1,4 +1,4 @@
-from versionhq.task.model import Task
+from versionhq import Task
 from pydantic import BaseModel
 
 

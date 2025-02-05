@@ -1,7 +1,7 @@
 from dotenv import load_dotenv
 from typing import Any, Tuple
 
-from versionhq.task.model import TaskOutput
+from versionhq import TaskOutput
 
 from src.tasks import task_info_retrieval, task_reasoning, task_text_gen
 from src.agents import create_agents
