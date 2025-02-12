@@ -1,8 +1,8 @@
-from versionhq import Agent
+import versionhq as vhq
 
 
-def create_agents(llm: str = None) -> tuple[Agent]:
-  researcher = Agent(
+def create_agents(llm: str = None) -> tuple[vhq.Agent]:
+  researcher = vhq.Agent(
     role="Researcher",
     goal="Retrieve and summarize relevant information.",
     backstory="You are a researcher studying animal domestication.",
@@ -12,7 +12,7 @@ def create_agents(llm: str = None) -> tuple[Agent]:
     ]
   )
   
-  content_creator = Agent(
+  content_creator = vhq.Agent(
     role="Content Creator",
     goal="Write creative content.",
     llm=llm,

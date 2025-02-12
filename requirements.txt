@@ -1,4 +1,5 @@
 python-dotenv>=1.0.1
-versionhq>=1.1.12.2
 pydantic>=2.10.6
 typing
+versionhq>=1.2.1.1
+versionhq[docling]

@@ -1,4 +1,4 @@
-from versionhq import Task
+import versionhq as vhq
 from pydantic import BaseModel
 
 
@@ -10,7 +10,7 @@ class Output(BaseModel):
 
 
 
-task_info_retrieval = Task(
+task_info_retrieval = vhq.Task(
   description="""
 Process the given knowledge sources and answer the following question: 
 What specific evidences supported the traditional view of cat domestication centered on Egypt?
@@ -25,7 +25,7 @@ List up the evidences.
 )
 
 
-task_reasoning = Task(
+task_reasoning = vhq.Task(
   description="""
 Based on the provided text, answer the following question, explaining your reasoning for the answer.
 Question:
@@ -41,7 +41,7 @@ How did the environment of early human settlements play a role?
   ]
 )
 
-task_text_gen = Task(
+task_text_gen = vhq.Task(
   description="Write me a poem about palm trees in the style of Emily Dickinson.",
   should_evaluate=True,
   eval_criteria=[

@@ -1,7 +1,7 @@
 from dotenv import load_dotenv
 from typing import Any, Tuple
 
-from versionhq import TaskOutput
+import versionhq as vhq
 
 from src.tasks import task_info_retrieval, task_reasoning, task_text_gen
 from src.agents import create_agents
@@ -23,14 +23,14 @@ results = {
 }
 
 
-def execute_task(llm: str, index: int | str) -> Tuple[TaskOutput, dict[str, Any]]:
+def execute_task(llm: str, index: int | str) -> Tuple[vhq.TaskOutput, dict[str, Any]]:
   researcher, creator = create_agents(llm=llm)
   tasks = [
     (task_info_retrieval, researcher),
     (task_reasoning, researcher),
     (task_text_gen, creator),
   ]
-  res = tasks[index][0].execute_sync(agent=tasks[index][1])
+  res = tasks[index][0].execute(agent=tasks[index][1])
   if res.raw:
     results[llm].append(
       {
